@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "inlineSources": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -13,14 +11,10 @@
     "lib": ["esnext"],
     "composite": true,
     "incremental": true,
-    "declaration": true,
-    "declarationMap": true,
-    "rootDir": "src",
     "skipLibCheck": true,
-    "outDir": "cjs",
     "target": "esnext",
-    "module": "node16",
-    "moduleResolution": "node16",
+    "module": "ES2015",
+    "moduleResolution": "Bundler",
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true
   },
