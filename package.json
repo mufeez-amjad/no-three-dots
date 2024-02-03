@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-three-dots",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An eslint rule to replace the use of '...' with the ellipsis character ('…') in strings",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,5 @@
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
-  },
-  "type": "module"
+  }
 }
