@@ -1,13 +1,18 @@
 {
   "name": "eslint-plugin-no-three-dots",
   "version": "1.0.0",
-  "description": "",
+  "description": "An eslint rule to replace the use of '...' with the ellipsis character ('…') in strings",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "ellipsis"
+  ],
+  "author": "mufeez-amjad",
   "license": "ISC",
   "dependencies": {
     "@typescript-eslint/parser": "^6.20.0",
@@ -18,5 +23,8 @@
     "jest": "^29.7.0",
     "ts-jest": "^29.1.2",
     "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
   }
 }
