@@ -25,12 +25,8 @@ const rule = createRule({
   create(context) {
     return {
       Literal(node) {
-        if (typeof node.value !== "string") {
-          return;
-        }
-
-        if (!node.value.endsWith(threeDots)) {
-          // Only check for three dots at the end of the string.
+        if (typeof node.value !== "string" || !node.value.endsWith(threeDots)) {
+          // Only check for three dots at the end of a string.
           return;
         }
 
@@ -43,9 +39,6 @@ const rule = createRule({
           node,
           messageId: "noThreeDots",
           fix(fixer) {
-            if (!node.range) {
-              return null;
-            }
             const startIdx = node.range[0] + idx + 1;
             return fixer.replaceTextRange(
               [startIdx, startIdx + threeDots.length],
@@ -55,7 +48,7 @@ const rule = createRule({
         });
       },
       JSXText: (node) => {
-        if (/\.{3}$/.test(node.value)) {
+        if (node.value.endsWith(threeDots)) {
           context.report({
             node,
             messageId: "noThreeDots",

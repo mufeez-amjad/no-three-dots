@@ -11,7 +11,7 @@ const ruleTester = new RuleTester({
   }
 });
 
-const tsTest = (str: string) => `const foo = '${str}'`;
+const tsTest = (str: string) => `const foo = '${str}';`;
 const jsxTest = (str: string) => `
     const bar = () => (
         <div>${str}</div>
