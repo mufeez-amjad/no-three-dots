@@ -1,5 +1,5 @@
-import noThreeDots from './noThreeDots';
+import noThreeDots from './src/noThreeDots';
 
 export const rules = {
-  'noThreeDots': noThreeDots,
+  'no-three-dots': noThreeDots,
 };

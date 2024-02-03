@@ -1,6 +1,6 @@
 import { RuleTester } from '@typescript-eslint/rule-tester';
 
-import noThreeDots from './noThreeDots';
+import noThreeDots from '../src/noThreeDots';
 
 const ruleTester = new RuleTester({
   parser: '@typescript-eslint/parser',

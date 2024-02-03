@@ -4,12 +4,11 @@ const ellipsis = "…";
 const threeDots = "...";
 
 const createRule = ESLintUtils.RuleCreator(
-  (name) => `https://example.com/rule/${name}` //TODO: replace with repo URL
+  (name) => `https://github.com/mufeez-amjad/${name}` //TODO: replace with repo URL
 );
 
-// Type: RuleModule<"uppercase", ...>
 const rule = createRule({
-  name: "uppercase-first-declarations",
+  name: "no-three-dots",
   meta: {
     docs: {
       description: "Disallow three dots in string literals. Prefer ellipsis.",
